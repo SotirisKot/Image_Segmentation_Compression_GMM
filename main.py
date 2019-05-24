@@ -69,7 +69,7 @@ def train(X, k, iterations):
     m_k, s_k, p_k = initialize_parameters(k, D)
     tolerance = 1e-6
 
-    # initialize the first loss to a small negative number.
+    # initialize the first loss to -Inf so the first loss will be larger.
     loss_old = -np.Inf
     gammas = None
 
